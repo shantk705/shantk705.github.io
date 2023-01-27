@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import './components/rotateTags.scss';
+import icon from './images/laptop.svg';
+import Tags  from'./components/rotateTags.js';
+import './index.css'
+import './components/card.scss'
+import Cards from './components/card.js'
+import Footers from './components/footer.js';
+import './components/Footer.scss'
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className='nav-container'>
+    <img src={icon}alt='a laptop picture'/>
+     <div className='logo-title'>Compu<span className='store'>Store</span></div>
+     <input className='search-bar' Type="text" placeholder="Search For Products..."/>
+     </div>
+    
+    <Tags/>
+    <div className='card-container'>
+    <Cards/>
     </div>
+    <Footers/>
+   
+  
+    
+  
+    </>
+    
   );
 }
 

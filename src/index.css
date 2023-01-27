@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  background: rgb(45, 56, 166);
+  background: linear-gradient(90deg, rgba(45, 56, 166, 1) 0%, rgba(47, 97, 250, 1) 35%, rgb(85, 142, 234) 100%);
+  height: 10vh;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.nav-container img {
+  width: 3vw;
+  color: white;
+  cursor: pointer;
+  margin-left: 2%;
+
+
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 3vh;
+  width: 25vw;
+  margin-left: 20%;
+  color: black;
+  background-color: transparent;
+  border-bottom: 4px rgb(255, 250, 250) solid;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: none;
+  
+
+  outline: none;
+
+
+}
+.search-bar::placeholder{
+  color: white;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+.store {
+  color: white;
+}
+
+
+.logo-title {
+  cursor: pointer;
+}
+
+
+
+/* //this is for the cards */
+
+
+
